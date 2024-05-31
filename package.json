@@ -12,6 +12,10 @@
     "material",
     "themes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/web-app-merchants/ngx-generate-material2-theme"
+  },
   "author": "Tayamba Mwanza",
   "license": "MIT",
   "schematics": "./src/collection.json",
