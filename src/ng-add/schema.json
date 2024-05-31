@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "NgxGenerateMaterial2Theme",
+  "title": "Ngx Generate Material 2 Theme",
+  "type": "object",
+  "properties": {
+    "projectName": {
+      "type": "string",
+      "description": "The name of the project.",
+      "x-prompt": "Enter project name"
+    },
+    "primaryColor": {
+      "type": "string",
+      "description": "The primary color for the theme.",
+      "x-prompt": "Enter primary theme color hex value"
+    },
+    "accentColor": {
+      "type": "string",
+      "description": "The primary color for the theme.",
+      "x-prompt": "Enter secondary theme color hex value"
+    }
+  },
+  "required": [
+    "projectName",
+    "primaryColor",
+    "accentColor"
+  ]
+}
