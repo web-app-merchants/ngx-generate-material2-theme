@@ -1,10 +1,12 @@
-# Ngx Generate Material Theme
+# Ngx Generate Material 2 Theme
 
 This library was generated with [Nx](https://nx.dev).
 
-This Angular schematic generates an angular material theme from primary and accent hex color values, a dark mode is also generated.
+This Angular schematic generates an angular material 2 theme from primary and accent hex color values, a dark mode is also generated.
 
 Use it after adding @angular/material with schematics.
+
+[For material 3, click here](https://material.angular.io/guide/theming#custom-theme)
 
 ### Usage
 
