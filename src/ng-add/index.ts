@@ -29,7 +29,7 @@ export default function (options: Schema): Rule {
         if (project.extensions.projectType === ProjectType.Application) {
           return chain([
             addPackagesToPackageJson(),
-            addThemeToAppStyles({projectName: projectName, primaryColor, accentColor}, project),
+            addThemeToAppStyles({projectName, primaryColor, accentColor}, project),
           ]);
         } else {
           if (!isPrimaryColorValidRegex) {
