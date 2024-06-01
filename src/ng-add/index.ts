@@ -26,11 +26,9 @@ export default function (options: Schema): Rule {
 
         context.logger.info(`⌛ Generating Theme`);
 
-        context.addTask(new NodePackageInstallTask());
-
         if (project.extensions.projectType === ProjectType.Application) {
           return chain([
-            addPackageToPackageJson(),
+            addPackagesToPackageJson(),
             addThemeToAppStyles({projectName: projectName, primaryColor, accentColor}, project),
           ]);
         } else {
@@ -54,7 +52,7 @@ export default function (options: Schema): Rule {
   };
 }
 
-function addPackageToPackageJson(): Rule {
+function addPackagesToPackageJson(): Rule {
   return (tree: Tree, context: SchematicContext) => {
     const pkgPath = '/package.json';
     const buffer = tree.read(pkgPath);
@@ -74,7 +72,7 @@ function addPackageToPackageJson(): Rule {
     tree.overwrite(pkgPath, JSON.stringify(pkg, null, 2));
 
     context.logger.info(`✓ tinycolor2 Installed`);
-
+    context.addTask(new NodePackageInstallTask());
     return tree;
   };
 }
