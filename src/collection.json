@@ -5,6 +5,13 @@
       "description": "Generate custom angular material theme in a project",
       "factory": "./ng-add/index",
       "schema": "./ng-add/schema.json"
+    },
+    "ng-add-setup-custom-theme": {
+      "description": "Generates custom angular material 2 theme",
+      "private": true,
+      "factory": "./ng-add/setup-custom-theme",
+      "schema": "./ng-add/schema.json",
+      "hidden": true
     }
   }
 }

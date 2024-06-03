@@ -1,6 +1,6 @@
 {
   "name": "@ngwam/ngx-generate-material2-theme",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A schematic to generate an angular material 2 theme from a primary and accent set of hexadecimal color codes",
   "scripts": {
     "build": "tsc -p tsconfig.json",
